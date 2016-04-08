@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#323e48">
+
+	<meta property="og:image" content="img/og.png">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>.onepage-wrapper,.onepage-wrapper .section{width:100%;height:100%}body,html{margin:0;overflow:hidden;-webkit-transition:opacity .4s;transition:opacity .4s}.onepage-wrapper,body,html{display:block;position:static;padding:0;width:100%;height:100%}.onepage-wrapper{display:block;position:relative;padding:0;-webkit-transform-style:preserve-3d}.onepage-pagination{position:absolute;right:10px;top:50%;z-index:5;list-style:none;margin:0;padding:0}.onepage-pagination li{padding:0;text-align:center}.onepage-pagination li a{padding:10px;width:4px;height:4px;display:block}.onepage-pagination li a:before{content:'';position:absolute;width:4px;height:4px;background:rgba(0,0,0,.85);border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px}.onepage-pagination li a.active:before{width:10px;height:10px;background:0 0;border:1px solid #000;margin-top:-4px;left:8px}.disabled-onepage-scroll,.disabled-onepage-scroll .wrapper{overflow:auto}.disabled-onepage-scroll .onepage-wrapper{-webkit-transform:none!important;transform:none!important;-ms-transform:none!important;min-height:100%}.disabled-onepage-scroll .onepage-wrapper .section{position:relative!important;top:auto!important;left:auto!important}.disabled-onepage-scroll .onepage-pagination{display:none}.disabled-onepage-scroll .onepage-wrapper,body.disabled-onepage-scroll,html{position:inherit}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:UbuntuRegular,sans-serif;overflow-x:hidden}p{font-size:18px;-webkit-animation-delay:1s;animation-delay:1s;max-width:800px;margin:0 auto}h1{font-size:2em;-webkit-animation-delay:.3s;animation-delay:.3s}h2{font-size:1.5em;-webkit-animation-delay:.5s;animation-delay:.5s}h3{font-size:1em;-webkit-animation-delay:.8s;animation-delay:.8s}section .section_container{position:relative;height:100%;width:100%;display:block;text-align:center;color:#fff;padding:20vh 0;font-size:42px;overflow:hidden}.home{background:url(../img/top.jpg) center no-repeat;background-size:cover}.home .section_container{padding:40vh 0}.menu ul,.menu ul li{padding:0;margin:0}ul.onepage-pagination{display:none}.menu{position:fixed;top:20px;left:50px}.menu ul li{display:inline-block}.menu ul li a{display:block;padding:10px 15px;height:auto;width:auto;text-shadow:none;text-decoration:none;list-style-type:none;margin:0;color:#fff;background:#323e48;font-size:1.8em;cursor:pointer}.menu ul li a:before{content:'';width:0;height:0;background:0 0;display:none}.menu ul li a.active,.menu ul li a:hover{outline:#fff solid 2px;outline-offset:-5px;-webkit-transition:.3s linear;transition:.3s linear}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>//loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+<nav class="menu onepage-pagination">
+	<ul>
+		<li><a data-index="1">Main</a></li>
+		<li><a data-index="2">About me</a></li>
+		<li><a data-index="3">Third page</a></li>
+		<li><a data-index="4">Fourth page</a></li>
+	</ul>
+</nav>
+<div class="main">
+	<section class="home">
+		<div class="section_container">
+			<h1>Hello</h1>
+			<h3>my name is</h3>
+		</div>
+	</section>
+	<section class="about">
+		<div class="section_container">
+			<h1>Something about me</h1>
+			<h3>Lorem ipsum dolor sit amet, consect</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequatur dolor doloremque est eum maxime, natus nemo nihil nisi obcaecati pariatur quo repellat repudiandae similique sint ut veritatis voluptates?</p>
+		</div>
+	</section>
+	<section class="works">
+		<div class="section_container">
+			<h1>My Works</h1>
+			<div class="works-carousel">
+				<div class="work_slide">
+					<div class="ws_img_cont">
+						<a href="http://lorempixel.com/400/200/">
+							<img  src="http://lorempixel.com/400/200/" alt="alt">
+						</a>
+					</div>
+				</div>
+				<div class="work_slide">
+					<div class="ws_img_cont">
+						<a href="http://lorempixel.com/g/400/200/">
+							<img  src="http://lorempixel.com/g/400/200/" alt="alt">
+						</a>
+					</div>
+				</div>
+				<div class="work_slide">
+					<div class="ws_img_cont">
+						<a href="http://lorempixel.com/400/200/sports">
+							<img  src="http://lorempixel.com/400/200/sports" alt="alt">
+						</a>
+					</div>
+				</div>
+				<div class="work_slide">
+					<div class="ws_img_cont">
+						<a href="http://lorempixel.com/g/400/200/sports/1">
+							<img  src="http://lorempixel.com/g/400/200/sports/1" alt="alt">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="section_container">
+
+			<h1>Contacts</h1>
+			<h3>Lorem ipsum dolor sit amet, consect</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consequatur dolor doloremque est eum maxime, natus nemo nihil nisi obcaecati pariatur quo repellat repudiandae similique sint ut veritatis voluptates?</p>
+			<div class="social">
+				<a href="#"><i class="fa fa-vk"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+			</div>
+		</div>
+	</section>
+</div>
+	<!-- Здесь пишем код -->
+
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
