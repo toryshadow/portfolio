@@ -40,21 +40,50 @@ body textarea:required:valid
 	background: #323e48
 	.section_container
 		padding: 0
+		h1
+			margin: 50px 0 0
+		h3
+			margin: 10px 0
 		.works-carousel
-			padding-top: 20vh
+			padding-top: 15vh
 			.work_slide
 				max-height: 30vh
 				width: 100%
+				position: relative
 				.ws_img_cont
-					width: 300px
-					max-width: 600px
-					height: 300px
+					max-width: 500px
+					height: 400px
 					margin: 0 auto
-					overflow: hidden
+					overflow: visible
+					filter: blur(0)
 					img
 						width: 100%
 						height: auto
-
+				.ws_descr
+					position: absolute
+					text-align: center
+					top: 0
+					left: 0
+					width: 100%
+					padding-top: 20px
+					opacity: 0
+					h4
+						color: #FFFFFF
+						display: block
+						text-shadow: 0 0 10px #323e48
+				&:hover
+					cursor: pointer
+					.ws_img_cont
+						filter: blur(5px) grayscale(100%)
+						transition: .5s linear
+					.ws_descr
+						opacity: 1
+						transition: .3s linear
+				&:not(hover)
+					.ws_img_cont
+						transition: .5s linear
+					.ws_descr
+						transition: .1s linear
 			.owl-controls
 				.owl-nav
 					.owl-next, .owl-prev
@@ -80,6 +109,8 @@ body textarea:required:valid
 			box-shadow: 0 0 5px 3px rgba(0,0,0,.6)
 			transform: scale(1.1)
 			transition: .3s linear
+	p
+		span
 
 
 .mfp-container
@@ -92,4 +123,5 @@ body textarea:required:valid
 	max-width: 600px !important
 	z-index: 3000
 //ALWAYS END
+
 @import "media"
