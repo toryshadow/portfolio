@@ -31,7 +31,8 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
-
+.hidden
+	display: none
 .about
 	background: #dddddd
 	.section_container
@@ -71,6 +72,7 @@ body textarea:required:valid
 						color: #FFFFFF
 						display: block
 						text-shadow: 0 0 10px #323e48
+
 				&:hover
 					cursor: pointer
 					.ws_img_cont
@@ -84,44 +86,98 @@ body textarea:required:valid
 						transition: .5s linear
 					.ws_descr
 						transition: .1s linear
+
+
 			.owl-controls
 				.owl-nav
 					.owl-next, .owl-prev
 						display: inline-block
 						margin: 0 20px
+.gallery
+	position: relative
+	.gallery_cont
+		.owl-item
+			.gallery_slide
+				img
+					max-width: 600px
+					margin: 0 auto
+					width: 100%
+		.owl-controls
+			position: absolute
+			top: 400px
+			width: 100%
+			.owl-nav
+				max-width: 800px
+				margin: 0 auto
+				.owl-prev, .owl-next
+					color: #FFFFFF
+					font-size: 40px
+				.owl-prev
+					float: left
+				.owl-next
+					float: right
+	.site_url
+		margin: 0 auto
+		position: fixed
+		left: 50%
+		margin-left: -80px
+		top: 40px
+		width: 160px
+		text-align: center
+		z-index: 100
+		background: #FFA500
+		padding: 10px 0
+		color: #FFFFFF
+		border: 2px solid #323e48
+		&:hover
+			background: #FFFFFF
+			color: #323e48
 
 .contacts
 	background: #dddddd
 	.section_container
 		color: #323e48
-	a
-		display: inline-block
-		height: 60px
-		width: 60px
-		background: #323e48
-		color: #FFFFFF
-		line-height: 60px
 		text-align: center
-		border-radius: 50%
-		font-size: 28px
-		text-decoration: none
-		&:hover
-			box-shadow: 0 0 5px 3px rgba(0,0,0,.6)
-			transform: scale(1.1)
-			transition: .3s linear
-	p
-		span
-
-
+		.social
+			margin: 50px 0
+			a
+				display: inline-block
+				height: 60px
+				width: 60px
+				background: #323e48
+				color: #FFFFFF
+				line-height: 60px
+				text-align: center
+				border-radius: 50%
+				font-size: 28px
+				text-decoration: none
+				&:hover
+					box-shadow: 0 0 5px 3px rgba(0,0,0,.6)
+					transform: scale(1.1)
+					transition: .3s linear
+		p
+			color: #444
+			text-align: center
+			span
+				color: #323e48
+				font-weight: 600
+		h6
+			margin: 0
 .mfp-container
-	position: fixed !important
+	position: absolute !important
 	overflow-y: auto !important
-
+	z-index: 3000
+.mfp-figure
+	max-width: 600px !important
+	margin: 0 auto
 .mfp-figure figure img.mfp-img
 	max-height: none !important
 	height: auto !important
-	max-width: 600px !important
-	z-index: 3000
+
+
+
+
+
 //ALWAYS END
 
 @import "media"

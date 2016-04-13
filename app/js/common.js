@@ -11,6 +11,7 @@ $(function() {
 		pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
 		updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
 		beforeMove: function() {
+
 			console.log('before move');
 			if ($(window).width() > 769) {
 				$('h1').css({'opacity': '0'}).removeClass('animated fadeInDown');
@@ -20,6 +21,7 @@ $(function() {
 			}
 		},  // This option accepts a callback function. The function will be called before the page moves.
 		afterMove: function() {
+
 			console.log('after move');
 			$('h1').addClass('animated fadeInDown');
 			$('h3').addClass('animated fadeInUp');
@@ -39,6 +41,14 @@ $(function() {
 		direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 	});
 
+	$(".gallery_cont").owlCarousel({
+		center: true,
+		items: 1,
+		nav:true,
+		loop: true,
+		navText: ['<i class="fa fa-caret-left"></i>','<i class="fa fa-caret-right"></i>']
+	});
+
 	$(".works-carousel").owlCarousel({
 		center: true,
 		nav:true,
@@ -55,11 +65,44 @@ $(function() {
 	});
 
 
+
 	$('.work_slide a').magnificPopup({
-		type: 'image'
 		// other options
+		callbacks: {
+			open: function() {
+				$(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
+				// Will fire when this exact popup is opened
+				// this - is Magnific Popup object
+			},
+			close: function() {
+				$(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
+					event.preventDefault();
+					var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+					init_scroll(event, delta);
+				});
+				// Will fire when popup is closed
+			}
+
+			// e.t.c.
+		}
 	});
 
+	function init_scroll(event, delta) {
+		deltaOfInterest = delta;
+		var timeNow = new Date().getTime();
+		// Cancel scroll if currently animating or within quiet period
+		if(timeNow  < 1500) {
+			event.preventDefault();
+			return;
+		}
+
+		if (deltaOfInterest < 0) {
+			$(".main").moveDown()
+		} else {
+			$(".main").moveUp()
+		}
+		lastAnimation = timeNow;
+	}
 
 
 	//SVG Fallback
