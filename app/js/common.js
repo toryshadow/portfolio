@@ -41,31 +41,6 @@ $(function() {
 		direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 	});
 
-	$(".gallery_cont").owlCarousel({
-		center: true,
-		items: 1,
-		nav:true,
-		loop: true,
-		navText: ['<i class="fa fa-caret-left"></i>','<i class="fa fa-caret-right"></i>']
-	});
-
-	$(".works-carousel").owlCarousel({
-		center: true,
-		nav:true,
-		loop: true,
-		navText: ['<i class="fa fa-caret-left"></i>','<i class="fa fa-caret-right"></i>'] ,
-		responsive:{
-			600:{
-				items:2
-			},
-			1200:{
-				items:4
-			}
-		}
-	});
-
-
-
 	$('.work_slide a').magnificPopup({
 		// other options
 		callbacks: {
@@ -86,6 +61,35 @@ $(function() {
 			// e.t.c.
 		}
 	});
+
+	$(".gallery_cont").owlCarousel({
+		center: true,
+		items: 1,
+		nav:true,
+		loop: false,
+		lazyLoad: true,
+		navText: ['<i class="fa fa-caret-left"></i>','<i class="fa fa-caret-right"></i>']
+	});
+
+
+	$(".works-carousel").owlCarousel({
+		center: true,
+		nav:true,
+		loop: true,
+		navText: ['<i class="fa fa-caret-left"></i>','<i class="fa fa-caret-right"></i>'] ,
+		responsive:{
+			600:{
+				items:2
+			},
+			1200:{
+				items:4
+			}
+		}
+	});
+
+
+
+
 
 	function init_scroll(event, delta) {
 		deltaOfInterest = delta;
