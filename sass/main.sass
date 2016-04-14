@@ -96,9 +96,11 @@ body textarea:required:valid
 .gallery
 	position: relative
 	.gallery_cont
+
 		.owl-item
 			.gallery_slide
 				img
+					min-width: 300px
 					max-width: 600px
 					margin: 0 auto
 					width: 100%
@@ -118,7 +120,7 @@ body textarea:required:valid
 					float: right
 	.site_url
 		margin: 0 auto
-		position: fixed
+		position: absolute
 		left: 50%
 		margin-left: -80px
 		top: 40px
@@ -175,7 +177,8 @@ body textarea:required:valid
 	height: auto !important
 
 
-
+.owl-stage
+	min-width: 1000px
 
 
 //ALWAYS END
