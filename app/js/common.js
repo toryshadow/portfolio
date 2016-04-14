@@ -41,8 +41,12 @@ $(function() {
 		direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 	});
 
-	$('.work_slide a').magnificPopup({
+	$('.ajax-popup-link').magnificPopup({
 		// other options
+		type: 'ajax',
+		gallery:{
+			enabled:true
+		},
 		callbacks: {
 			open: function() {
 				$(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
@@ -62,14 +66,6 @@ $(function() {
 		}
 	});
 
-	$(".gallery_cont").owlCarousel({
-		center: true,
-		items: 1,
-		nav:true,
-		loop: false,
-		lazyLoad: true,
-		navText: ['<i class="fa fa-caret-left"></i>','<i class="fa fa-caret-right"></i>']
-	});
 
 
 	$(".works-carousel").owlCarousel({
@@ -86,7 +82,6 @@ $(function() {
 			}
 		}
 	});
-
 
 
 
