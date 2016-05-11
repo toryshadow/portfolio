@@ -37,13 +37,10 @@ body textarea:required:valid
 	background: #dddddd
 	.section_container
 		color: #323e48
-		p
-			padding-left: 15px
-			padding-right: 15px
 .works
 	background: #323e48
 	.section_container
-		padding: 10vh 0 0
+		padding: 0
 		h1
 			margin: 50px 0 0
 		h3
@@ -51,23 +48,18 @@ body textarea:required:valid
 		.works-carousel
 			padding-top: 15vh
 			.work_slide
-				max-height: 35vh
+				max-height: 30vh
 				width: 100%
 				position: relative
 				.ws_img_cont
 					max-width: 500px
-					height: 250px
+					height: 400px
 					margin: 0 auto
 					overflow: visible
 					filter: blur(0)
-					display: inline-block
-					vertical-align: middle
-					padding: 15px
 					img
-						max-width: 100%
-						max-height: 150px
-						vertical-align: middle
-						width: auto
+						width: 100%
+						height: auto
 				.ws_descr
 					position: absolute
 					text-align: center
@@ -80,18 +72,7 @@ body textarea:required:valid
 						color: #FFFFFF
 						display: block
 						text-shadow: 0 0 10px #323e48
-					a.ext_link
-						display: block
-						color: #fff
-						text-decoration: none
-						font-size: 32px
-						line-height: 50px
-						text-align: center
-						transition: .3s linear
-						&:hover
-							opacity: .8
-							transition: .3s linear
-							color: #ff0000
+
 				&:hover
 					cursor: pointer
 					.ws_img_cont
@@ -112,62 +93,20 @@ body textarea:required:valid
 					.owl-next, .owl-prev
 						display: inline-block
 						margin: 0 20px
-.gallery
-	position: relative
-	.gallery_cont
-
-		.owl-item
-			.gallery_slide
-				img
-					min-width: 300px
-					max-width: 600px
-					margin: 0 auto
-					width: 100%
-		.owl-controls
-			position: absolute
-			top: 400px
-			width: 100%
-			.owl-nav
-				max-width: 800px
-				margin: 0 auto
-				.owl-prev, .owl-next
-					color: #FFFFFF
-					font-size: 40px
-				.owl-prev
-					float: left
-				.owl-next
-					float: right
-	.site_url
-		margin: 0 auto
-		position: absolute
-		left: 50%
-		margin-left: -80px
-		top: 40px
-		width: 160px
-		text-align: center
-		z-index: 100
-		background: #FFA500
-		padding: 10px 0
-		color: #FFFFFF
-		border: 2px solid #323e48
-		&:hover
-			background: #FFFFFF
-			color: #323e48
 .single_work_slide
 	text-align: center
-	max-width: 800px
 	margin: auto
-	overflow-y: scroll
+	position: relative
+	width: 100%
 	img
 		display: block
-		max-width: 100%
-		
+		max-width: 800px
+		margin: 0 auto
 .contacts
 	background: #dddddd
 	.section_container
 		color: #323e48
 		text-align: center
-		background: #dddddd
 		.social
 			margin: 50px 0
 			a
@@ -203,9 +142,7 @@ body textarea:required:valid
 .mfp-figure figure img.mfp-img
 	max-height: none !important
 	height: auto !important
-.text-cont
-	padding-left: 15px
-	padding-right: 15px
+
 
 .owl-stage
 	min-width: 1000px

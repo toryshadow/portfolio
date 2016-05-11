@@ -35,8 +35,7 @@ gulp.task('scripts', function() {
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/animate/animate-css.js',
 		'./app/libs/onepage-scroll/jquery.onepage-scroll.min.js',
-		'./app/libs/owl.carousel/owl.carousel.min.js',
-		'./app/libs/magnific-popup/magnific-popup.min.js'
+		'./app/libs/owl.carousel/owl.carousel.min.js'
 		])
 		.pipe(concat('libs.js'))
 		.pipe(uglify()) //Minify libs.js
